@@ -1,0 +1,10 @@
+C:\Users\Isaiah\OneDrive\interview prep\Interview Prep\Interview Prep\bin\Debug\Interview Prep.exe
+C:\Users\Isaiah\OneDrive\interview prep\Interview Prep\Interview Prep\bin\Debug\Interview Prep.pdb
+C:\Users\Isaiah\OneDrive\interview prep\Interview Prep\Interview Prep\obj\x86\Debug\Interview Prep.csprojResolveAssemblyReference.cache
+C:\Users\Isaiah\OneDrive\interview prep\Interview Prep\Interview Prep\obj\x86\Debug\Interview Prep.exe
+C:\Users\Isaiah\OneDrive\interview prep\Interview Prep\Interview Prep\obj\x86\Debug\Interview Prep.pdb
+C:\Users\isparadi\OneDrive\interview prep\Interview Prep\Interview Prep\obj\x86\Debug\Interview Prep.exe
+C:\Users\isparadi\OneDrive\interview prep\Interview Prep\Interview Prep\obj\x86\Debug\Interview Prep.pdb
+C:\Users\isparadi\OneDrive\interview prep\Interview Prep\Interview Prep\bin\Debug\Interview Prep.exe
+C:\Users\isparadi\OneDrive\interview prep\Interview Prep\Interview Prep\bin\Debug\Interview Prep.pdb
+C:\Users\isparadi\OneDrive\interview prep\Interview Prep\Interview Prep\obj\x86\Debug\Interview Prep.csprojResolveAssemblyReference.cache

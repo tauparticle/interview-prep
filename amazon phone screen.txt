@@ -1,0 +1,62 @@
+Given 2 ASCII strings, find if they are anagrams.
+
+
+
+
+
+Given a list 'n' integers, find the kth largest
+
+
+
+
+
+6 2 4 1
+
+3nd largest - 4
+
+partition = index 2[4] => 1 2 4 6 -> return index 1[2]
+
+
+// runtime O(n) -> n/2 + n/4 + n/8 .....  --->  O(n)
+static int SelectionSort(int[] array, int left, int right, int rank)
+{
+    if (array == null) return -1; // or throw argumentnullexception    
+    if (rank > array.length()) return -1; // or throw
+    if (left > right) return -1; // throw new ArgumentException("invalid left, right range");
+    
+// pick partition in array as pivot.
+    int pivot = (right + left) / 2;  // this could be a random pivot and it should still work
+    
+// partition will move all elements less than on left of pivot, and all elements greater than pivot on right.
+   int leftEnd = partition(array, left, right, pivot);
+
+// keep track elements on the left of the partition.
+   int leftSize = leftEnd-left;
+
+// if there are exactly "rank" elements on the left, return the biggest element on left. (base case) 
+   if (leftSize == rank)
+   {
+      // return the max on the left side
+      int max = int.MinValue;
+      for (int i=left, i<leftEnd; ++i)
+      {
+          max = Math.Max(array[i], max);
+      }
+      
+      return max;
+   }
+
+// if left size is bigger than "rank", repeat algo on left
+  else if (rank < leftSize)
+   {
+       return Selection(array, left, leftEnd-1, rank);
+   }
+// else repeast algo on right
+   else
+   {
+       return Selection(array, leftEnd+1, right, left-leftSize+1);
+  }
+
+
+}
+

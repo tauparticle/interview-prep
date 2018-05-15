@@ -1,0 +1,200 @@
+/*
+ * Returns true if the input string is a number and false otherwise
+ */
+ 
+ // tests
+ input = null/empty = false
+ input = 124, -> true
+ input = -124 -> true
+ input = 1.234 -> true
+ input = 1.ad -> false
+ 
+ 1.2.2 -> false
+ - -> false
+public boolean isNumber(String toTest)
+{
+    if (string.IsNullOrEmpty(toTest)) return false;
+    
+    int start = 0;
+    if (toTest[0] == '-') {
+        start = 1;
+        if (toTest.Length == 1)
+        { 
+            // just one element in this string, and it's a neg sign
+            return false;
+        }
+    }
+    
+    int foundFraction = false;
+    
+    for (int i=start; i<toTest.Lenght; ++i)
+    {
+        if (toTest[i] == '.') 
+        {
+            if (foundFraction == true)
+            {
+                return false;
+            }
+            foundFraction = true;
+            continue;
+        }
+        
+        int num = toTest[i] - '0';
+        if (num >=0 && num <= 9)
+        { 
+            continue;
+        }
+        
+        return false;
+    }
+    
+    return true;
+}
+
+
+
+
+/* This class will be given a list of words (such as might be tokenized
+ * from a paragraph of text), and will provide a method that takes two
+ * words and returns the shortest distance (in words) between those two
+ * words in the provided text. 
+ * Example:
+ *   String[] words = {"the", "quick", "brown", "fox"};
+ *   WordDistanceFinder finder = new WordDistanceFinder(Arrays.asList(words));
+ *   System.out.println("dist between 'fox' and 'the' = " + finder.distance("fox","the"));            // 3
+ *   System.out.println("dist between 'quick' and 'brown' = " + finder.distance("quick", "brown"));   // 1
+ */
+public class WordDistanceFinder {
+
+    private Dictionary<string, IList<int>> mapOfWordsToIndicies = new Dictionary<string, IList<int>>(StringComparer.OrdinarlIgnoreCase);
+
+    public WordDistanceFinder (List<String> words) {
+        if (words == null) throw new ArgumentNullException("words", "Cannot be null");
+        
+        int index = 0;
+        foreach (string word in words)
+        {
+             if (word == null) continue;
+             IList<string> indicies;
+             if (!this.mapOfWordsToIndicies.TryGetValue(word, out indicies))
+             {
+                 indicies = new List<string>();
+                 this.mapOfWordsToIndicies.add(word, indicies);
+             }
+             
+             indicies.Add(index++);
+        }
+       
+    }
+    public int distance (String wordOne, String wordTwo) {
+        
+        if (wordOne == null || wordTwo == null) throw new ArgumentNullException("null args found");
+        
+        if (!this.mapOfWordsToIndicies.ContainsKey(wordOne) || !this.mapOfWordsToIndicies.ContainsKey(wordTwo))
+        {
+            return -1;
+        }
+        
+        IList<int> wordOneIndicies = this.mapOfWordsToIndicies[wordOne];
+        IList<int> wordTwoIndicies = this.mapOfWordsToIndicies[wordTwo];
+        
+        // word one indicies =  1, 3, 5, 19
+        // word two indicies =  0, 4, 7, 22
+        
+        int minDistance = -1;
+        int i = 0;
+        int j = 0;
+        while (i != wordOneIndicies.Length && j != wordTwoIndicies.Lenght)
+        {
+            minDistance = Math.Min(minDistance, Math.abs(wordOneIndicies.ElementAt(i) - wordTwoIndicies.ElementAt(j));
+            if (wordOneIndicies.ElementAt(i) > wordTwoIndicies.ElementAt(j)
+            {
+                j++;
+            }
+            else
+            {
+                i++;
+            }
+        }   
+        
+        return minDistance;   
+        
+    }
+}
+
+
+
+/////////////////////// second phone screen //////////////////////////////////
+    t1          t2
+    a     |     a
+   / \    |    / \
+  b   c   |   c   b
+ / \      |      / \
+d   e     |     e   d    return true
+ 
+    a     |     a
+   / \    |    / \
+  b   c   |   x   b
+ / \      |    \   \
+d   e     |     e   d    return false
+
+
+
+
+public static bool AreTreesMirrors(TreeNode t1, TreeNode t2)
+{
+    if (t1 == null || t2 == null) return false;
+
+    Queue<TreeNode> t1Q = new Queue<TreeNode>();
+    Queue<TreeNode> t2Q = new Queue<TreeNode>();
+    
+    t1q.push(t1);
+    t2q.push(t2);
+    
+    while (t1q.Count != 0 && t2q.Count != 0)
+    {
+        TreeNode tn1 = t1q.pop();
+        TreeNode tn2 = t2q.pop();        
+        
+        if (tn1 == null && tn2 == null) continue;
+        if (tn1 == null && tn2 != null) return false;
+        if (tn1 != null && tn2 == null) return false;
+        if (tn1.data != tn2.data)
+        {
+           return false;
+        } 
+           
+       
+        t1q.push(tn1.left);
+        t1q.push(tn1.right); 
+        
+        t2q.push(tn2.right);
+        t2q.push(tn2.left);  
+         
+    }
+    
+    return true;
+}
+
+q1 = a | c b | b null | null
+q2 = a | c b | d e | e
+
+    a      |     a
+   / \     |    / \
+  b   c    |   c   b
+ /     \   |      / \
+d       e  |     e   d 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+public static Class NodeCounter {
+
+    private AutoResetEvent requestLeft = new AutoResetEvent();
+    private AutoResetEvent requestRight = new AruoResetEvent();
+    
+    private int NumOnLeft = 0;
+    private int NumOnRight = 0;
+    
+    void printNumNodes() {
+        // write code here to print out the number of nodes.
+        
+        // if left, send left msg
+        if (hasLeft())
+        {  
+             sendMsgLeft(1);
+             requestLeft.Wait();
+        }             
+        
+        if (hasRight())
+        { 
+            sendMsgRight(1);
+            requestRight.Wait();
+        }
+        
+        return NumOnLeft + 1 + NumOnRight;
+
+   }
+
+    boolean hasLeft(); /* returns true if there is a left node */ 
+    boolean hasRight(); /* return true if there is a right node */
+    
+    void sendMsgLeft(Object msg) { /* sends msg to the left node */ }
+    void sendMsgRight(Object msg) { /* sends msg to the right node */ }
+    
+    String getNodeName();
+
+    void receiveMsgFromRight(Object msg) {
+        Integer count = (Integer)msg;
+        NumOnRight = count;
+        
+        if (!requestRight.IsSet())
+        {
+            requestRight.Set();
+            return;
+        }
+        if (hasLeft())
+        {
+            // pass the note left + self
+            sendMsgLeft(count++)
+        }
+        else
+        {
+            // echo back
+            sendMsgRight(count);
+        }
+        
+    }
+    
+    void receiveMsgFromLeft(Object msg) {
+        Integer count = (Integer)msg;
+        NumOnLeft = count;
+        
+        if (!requestLeft.IsSet())
+        {
+            requestLeft.Set();
+            return;
+        }
+        
+        if (hasRight())
+        {
+            // pass the note right + self
+            sendMsgRight(count++)
+        }
+        else
+        {
+            // echo back
+            sendMsgLeft(count);
+        }
+    }
+}
+
+
+node 1  <--> node 2 <---> node 3 <--> node 4 <--> node 5
+  2           2             1           2           2
+            
+                           2 + 1 + 2
+            

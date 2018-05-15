@@ -1,0 +1,12 @@
+c:\users\isaiah\documents\visual studio 2012\Projects\ManagedInterviewPrep\ManagedInterviewPrep\bin\Debug\ManagedInterviewPrep.exe.config
+c:\users\isaiah\documents\visual studio 2012\Projects\ManagedInterviewPrep\ManagedInterviewPrep\bin\Debug\ManagedInterviewPrep.exe
+c:\users\isaiah\documents\visual studio 2012\Projects\ManagedInterviewPrep\ManagedInterviewPrep\bin\Debug\ManagedInterviewPrep.pdb
+c:\users\isaiah\documents\visual studio 2012\Projects\ManagedInterviewPrep\ManagedInterviewPrep\obj\Debug\ManagedInterviewPrep.csprojResolveAssemblyReference.cache
+c:\users\isaiah\documents\visual studio 2012\Projects\ManagedInterviewPrep\ManagedInterviewPrep\obj\Debug\ManagedInterviewPrep.exe
+c:\users\isaiah\documents\visual studio 2012\Projects\ManagedInterviewPrep\ManagedInterviewPrep\obj\Debug\ManagedInterviewPrep.pdb
+C:\Users\isparadi\OneDrive\interview prep\ManagedInterviewPrep\ManagedInterviewPrep\bin\Debug\ManagedInterviewPrep.exe.config
+C:\Users\isparadi\OneDrive\interview prep\ManagedInterviewPrep\ManagedInterviewPrep\obj\Debug\ManagedInterviewPrep.exe
+C:\Users\isparadi\OneDrive\interview prep\ManagedInterviewPrep\ManagedInterviewPrep\obj\Debug\ManagedInterviewPrep.pdb
+C:\Users\isparadi\OneDrive\interview prep\ManagedInterviewPrep\ManagedInterviewPrep\bin\Debug\ManagedInterviewPrep.exe
+C:\Users\isparadi\OneDrive\interview prep\ManagedInterviewPrep\ManagedInterviewPrep\bin\Debug\ManagedInterviewPrep.pdb
+C:\Users\isparadi\OneDrive\interview prep\ManagedInterviewPrep\ManagedInterviewPrep\obj\Debug\ManagedInterviewPrep.csprojResolveAssemblyReference.cache

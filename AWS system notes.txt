@@ -1,0 +1,56 @@
+Cloud Computing Amazon Interview Questions and Answers
+This page contains the collection of Cloud Computing Amazon Interview Questions and Answers / Frequently Asked Questions (FAQs) under category Cloud Computing. These questions are collected from various resources like informative websites, forums, blogs, discussion boards including MSDN and Wikipedia. These listed questions can surely help in preparing for Cloud Computing Amazon interview or job.
+What are the different components used in AWS?
+The components that are used in AWS are: 
+
+1. Amazon S3: it is used to retrieve input data sets that are involved in making a cloud architecture and also used to store the output data sets that is the result of the input. 
+2. Amazon SQS: it is used for buffering requests that is received by the controller of the Amazon. It is the component that is used for communication between different controllers. 
+3. Amazon SimpleDB: it is used to store intermediate status log and the tasks that are performed by the user/ 
+4. Amazon EC2: it is used to run a large distributed processing on the Hadoop cluster. It provides automatic parallelization and job scheduling.
+What are the uses of Amazon web services?
+Amazon web services consist of a component called as Amazon S3 that acts as a input as well used as an output data store. It is used in checking the input and according to that gives the output. The input consists of the web that is stored on Amazon S3 as object and it is update frequently to make the changes in the whole architecture. It is required due to the on demand growing of the data set and to provide persistent storage.
+How to use Amazon SQS?
+Amazon SQS is a message passing mechanism that is used for communication between different connectors that are connected with each other. It also acts as a communicator between various components of Amazon. It keeps all the different functional components together. This functionality helps different components to be loosely coupled, and provide an architecture that is more failure resilient system.
+How buffer is used in Amazon web services?
+Buffer is used to make the system more resilient to burst of traffic or load by synchronizing different component. The components always receive and process the requests in unbalanced way. Buffer keeps the balance between different components and makes them work at the same speed to provide faster services.
+What is the need of the feature isolation in Amazon web services?
+Isolation provides a way to hide the architecture and gives an easy and convenient way to the user to use the services without any difficulty. When a message is passed between two controllers then a queue is maintained to keep the message. No controller calls any other controller directly. The communication takes place between the controllers by storing their messages in a queue. It is a service that provides a uniform way to transfer the messages between different application components. This way all the controllers are kept isolated from each other.
+What is the function of a Amazon controller?
+The functions that are involved with an Amazon controller are: 
+- Controllers are used to control the flow in which the messages between the other system components has to be passed. 
+- It controls the overall structure of the Amazon and all to retrieve the message, process the message, execute a function and store the message in other queue that are completely isolated from other controllers. 
+- It manages and monitors the messages passed between the systems.
+What is the function of Amazon Elastic Compute Cloud?
+Amazon Elastic compute cloud is also known as Amazon EC2 is an Amazon web service that provides scalable resources and makes the computing easier for developers. The main functions of Amazon EC2 are: 
+- It provides easy configurable options and allow user to configure the capacity. 
+- It provides the complete control of computing resources and let the user run the computing environment according to his requirements. 
+- It provides a fast way to run the instances and quickly book the system hence reducing the overall time. 
+- It provides scalability to the resources and changes its environment according to the requirement of the user. 
+- It provides varieties of tools to the developers to build failure resilient applications.
+What are the different types of instances used in Amazon EC2?
+The instances that can be used in Amazon EC2 are: 
+1. Standard Instances: It provides small instances, large instances, extra large instances that give various configuration options from low range to very high range like Computing power unit, memory, processor, etc. 
+2. Micro Instances: It provides small consistent resources like CPU, memory and computing unit. It provides the resources to the applications that consume less amount of computing unit. 
+3. High Memory Instances: It provides large memory sizes for high end application and it includes memory caching applications as well.
+What are cluster compute instances?
+The cluster compute instances consist of the high CPU with network performance and are suited with high end applications. It provides network bound application and provide extra large computing resources like 23 GB memory, 33.5 EC2 compute units. It provide general purpose graphics unit to allow user with high end configuration. It also provide highly parallelized processing application that user can use and modify the server accordingly.
+How to use SimpleDB with Amazon?
+Every architecture rely on a database that is easy to maintain and gets easily configured Amazon uses the database by the name SimpleDB. This is the database that is used for cloud architecture to track the statuses of the components. The component of the system are asynchronous and discrete, it requires capturing the state of the system so that in any failure the user can easily revert back to its normal configuration. SimpleDB is schema-less database and there is no need to define the structure before the creation of any data. Every controller in the database defines their own structure and link the data to a job.
+How does component services used for Amazon SimpleDB?
+Component services allow the controllers to independently store the states of the virtual machines and the database that is in use. It creates asynchronous highly available services. It stores active requests according to the unique ID that are associated with each system. It stores the status of the entire database that is having different states for different components in a log database file.
+How to upload files in Amazon S3?
+Amazon S3 provides uploading of large files and retrieve small offsets for end-to-end transfer data rates. The large file gets stored into small files that are smaller in size. Amazon S3 stores multiple of files together in a bundle or in a compressed form for example in .gzip or .gz format and then convert them into Amazon S3 objects. The files get uploaded on the Amazon server by the use of FTP or another protocol and then retrieved through the HTTP GET request. The request includes the defined parameters like URL, offset (byte-range) and size (length).
+What is the use of multi-threaded fetching in Amazon S3?
+- Multi-threading fetching in Amazon S3 is used to fetch the objects concurrently using the multiple threads and map the task so that fetching can be made simpler. 
+- It is not a good practice to increase the threading for a particular object as every node on the server has some bandwidth constraints. 
+- It provides user the ease with which they can upload the files and upload the threads in parallel. 
+- It provides high speed of data transfer and easy maintenance of the sever as well.
+What is the difference between on demand and reserved instances?
+- On demand instance allow user to pay for the computing capacity according to their use every hour, whereas reserved instances provide user to pay for every instance which they use and they want to reserve. 
+- On demand instance provide user a free working environment in which there is no need for too much of planning related to complexities, whereas reserved instances provide user with discounts on the hourly charge of an instance and provide a easy way to manage the instances as well. 
+- On demand instance provide maintenance of hardware and transforms fixed cost into much smaller variable costs, whereas reserved instance provide easy way to balance the pay package.
+What are the provisions provided by Amazon Virtual Private cloud?
+Amazon private cloud provides a provision to create a private and isolated networking infrastructure to give easily the Amazon web services. - Virtual network topologies define the traditional data-center approach to control and mange the files from one place. 
+- It provides complete control over IP address range, creation of sub-nets and configuring the network gateways and route tables. 
+- It provides easy to customize network configuration like creation of public sub-net to access the Internet easily. 
+- It allow to create multiple security layers and provide network control list by which you can control the access to Amazon EC2 instances.

@@ -1,0 +1,58 @@
+test
+test2
+
+input: “-8.029”
+output: -8.029 as float
+
+const int MAX_FLOAT_DIGIT_SIZE = // fill in from math.h
+
+0 1 2 3 4 5
+-,8,.,0,2,9
+end = 1
+base = 1->10->100->1000
+i = 5 -> 4->3->2->1
+9 * 1 = 9
+2 * 10 + 9 = 29
+0 (skip) and advance base
+. -> divisor = 1000(base)
+8 * 1000 = 8000 + 29 = 8029
+returnVal = 8029 / 1000 = 8.029 
+negate it = -8.029
+
+float strToFloat(string & input)
+{
+   if (input.size() == 0) return 0.0F;
+   if (input.size() > MAX_FLOAT_DIGIT_SIZE) // throw or return -1
+   int retVal = 0;
+   bool isNeg = (input[0] == ‘-’);
+   bool end = (isNeg) ? 1 : 0;
+   int base = 1;   
+   int divisor = 1;
+   int valueSum = 0;
+
+   for (int i=input.size()-1; i>=end; i--)
+   {
+      if (input[i] == ‘.’)
+      {
+         divisor = base;
+         continue; 
+      }
+	    
+       int value = input[i] - ‘0’;      
+       // check for range 0-9
+       if (value < 0 || value > 9) return -1;
+
+       if (value != 0)
+       {
+          valueSum += value * base;
+       }
+         
+       // advance to next base 1,10,100,1000 etc..
+       base *= 10;
+   }
+   
+   float returnValue = (float)valueSum/divisor;
+   return isNeg ? returnValue*-1 : returnValue;
+
+}
+   

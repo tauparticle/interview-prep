@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C0B4AF3-44A1-4026-8EFB-15A40D5CA538}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Interview_Prep</RootNamespace>
+    <AssemblyName>Interview Prep</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bits\ReverseBitsInUnsignedInt.cs" />
+    <Compile Include="DataStructures\NGram.cs" />
+    <Compile Include="DataStructures\PriorityQueue.cs" />
+    <Compile Include="DesignQuestions\NodeCount.cs" />
+    <Compile Include="Graph\DeepCopyGraph.cs" />
+    <Compile Include="HardQuestions\3SUM.cs" />
+    <Compile Include="HardQuestions\ArraySequencesThatAddUpToSum.cs" />
+    <Compile Include="HardQuestions\ConvertRomanNumeralToInt.cs" />
+    <Compile Include="HardQuestions\DivideWithoutSlash.cs" />
+    <Compile Include="HardQuestions\FindMissingNumberInString.cs" />
+    <Compile Include="HardQuestions\MergeAllLists.cs" />
+    <Compile Include="LinkedList\DeleteDups.cs" />
+    <Compile Include="LinkedList\ReverseLinkedList.cs" />
+    <Compile Include="Stack_Queue\MakeQueueFrom2Stacks.cs" />
+    <Compile Include="Stack_Queue\Sort2Queues.cs" />
+    <Compile Include="Stack_Queue\SortStackWithAnotherStack.cs" />
+    <Compile Include="Stack_Queue\StackWithMin.cs" />
+    <Compile Include="StringProblems\atoi.cs" />
+    <Compile Include="Bits\CountBinary1sInStream.cs" />
+    <Compile Include="DataStructures\SuffixTree.cs" />
+    <Compile Include="DivideAndConquer\BinarySearch.cs" />
+    <Compile Include="DivideAndConquer\FindElementInRotatedArray.cs" />
+    <Compile Include="DynamicProgramming\LongestCommonSubstring.cs" />
+    <Compile Include="DynamicProgramming\LongestIncreasingSequence.cs" />
+    <Compile Include="FindIntersectionOfArrays.cs" />
+    <Compile Include="Graph\FindPathBetween2GraphNodes.cs" />
+    <Compile Include="Graph\FindPathExistsInGraph.cs" />
+    <Compile Include="Graph\Graph.cs" />
+    <Compile Include="HardQuestions\Count2sBetween0andN.cs" />
+    <Compile Include="HardQuestions\IsNumberAPalindrome.cs" />
+    <Compile Include="IntervalSets.cs" />
+    <Compile Include="OOD\HashMap.cs" />
+    <Compile Include="StringProblems\ConvertNumberToPhrase.cs" />
+    <Compile Include="StringProblems\DistanceBetweenWordsInASentence.cs" />
+    <Compile Include="StringProblems\FindFirstNonRepeatingChar.cs" />
+    <Compile Include="StringProblems\IsNumberValid.cs" />
+    <Compile Include="StringProblems\LengthOfLongestSubstring.cs" />
+    <Compile Include="StringProblems\RegularExpression.cs" />
+    <Compile Include="StringProblems\SearchingForNextCharInSearch.cs" />
+    <Compile Include="StringProblems\TransformWordIntoOtherWord.cs" />
+    <Compile Include="Trees\BuildTreeFromInorderAndPreorderTraversal.cs" />
+    <Compile Include="Trees\BuildTreeFromMatrixInput.cs" />
+    <Compile Include="CircularArray.cs" />
+    <Compile Include="DivideAndConquer\CoinPuzzle.cs" />
+    <Compile Include="DynamicProgramming\Combinations.cs" />
+    <Compile Include="StringProblems\CompressString.cs" />
+    <Compile Include="StringProblems\FindAllRepeatingSubstrings.cs" />
+    <Compile Include="FindMinAbsFrom2Arrays.cs" />
+    <Compile Include="Trees\ConvertTreeIntoDoublyLinkedList.cs" />
+    <Compile Include="Trees\ConvertTreeToDLL.cs" />
+    <Compile Include="Trees\FindBSTNodesThatSumUpToValue.cs" />
+    <Compile Include="Trees\FindLowestCommonAncestor.cs" />
+    <Compile Include="Trees\FindPathBetween2NodesInTree.cs" />
+    <Compile Include="StringProblems\IsomorphicStrings.cs" />
+    <Compile Include="Trees\IsTreeBalanced.cs" />
+    <Compile Include="LinkedList\LinkedList.cs" />
+    <Compile Include="DynamicProgramming\LongestCommonSubsequence.cs" />
+    <Compile Include="StringProblems\LongestPalindrome.cs" />
+    <Compile Include="MedianOfMedians.cs" />
+    <Compile Include="Trees\NextInorderSuccessor.cs" />
+    <Compile Include="DynamicProgramming\ParenthesisCombo.cs" />
+    <Compile Include="DynamicProgramming\Permutations.cs" />
+    <Compile Include="Trees\PrintLevelsOfABinaryTree.cs" />
+    <Compile Include="Trees\FindAllTreePaths.cs" />
+    <Compile Include="ProducerConsumerQueue.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuickRankSearch.cs" />
+    <Compile Include="Trees\RankTree.cs" />
+    <Compile Include="StringProblems\RansomNote.cs" />
+    <Compile Include="RateCounter.cs" />
+    <Compile Include="ShuffleDeck.cs" />
+    <Compile Include="StringProblems\StringProblems.cs" />
+    <Compile Include="SumOfMaxRunningSequence.cs" />
+    <Compile Include="Trees\SubTrees.cs" />
+    <Compile Include="Trees\TreeNode.cs" />
+    <Compile Include="Trees\Trie.cs" />
+    <Compile Include="Trees\ValidateIsBST.cs" />
+    <Compile Include="DynamicProgramming\WordBreak.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

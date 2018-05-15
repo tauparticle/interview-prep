@@ -1,0 +1,108 @@
+“aaaabbbbbccddddddd”  ; k=3 -> {b,5}  ; {a,4}  ;  {c,2}
+
+
+Tail = 11
+Head = 11
+Pq = {a,4}, {b,4}, {d,6}
+
+
+Struct charCount{
+  Char c; 
+  Int count;
+};
+
+
+Struct charCountComparator
+{
+    Bool operator() (const charCount& a, const charCount& b) {
+       // sort on count in decreasing order 
+};
+
+
+{a,5}, {b,5},{c,2},{d,6}
+
+
+
+
+vector<charCount> findTopKCharCounts(vector<int>& nums, int k)
+{
+	vector<charCount> results;
+            priority_queue<charCount> qp;
+           	Int tail = 0; 
+            Int head = 0;
+	While (head < nums.size() {
+       		While (head < nums.size() && nums[head] == nums[tail])  {
+                           Head++;
+}	
+
+
+		Int count = head - tail;
+		Int c = nums[tail];
+charCount current = charCount(){ c, count};
+
+
+Tail = head;
+
+
+// if size of pq is less than k, insert
+If (pq.size() < k) {
+	pq.push(current);
+}
+Else {
+                            // else if pq top is less than current count, pop it off, and insert
+
+
+   If (pq.top().count > count) {
+pq.pop();	
+pq.push(current);
+    }
+}
+	}
+
+
+
+
+	results.reserve(k);
+	Int index = k-1;;
+	For (int i=0; i<k; ++i) {
+	   Results[index--] = pq.top();
+	   pq.pop();
+	}
+         
+	Return results;
+}
+
+
+
+
+
+
+“Ab+a+” 
+Match: aba, abba, abaaa, abbbaaa
+
+
+“ab+a+” ,  “abba” -> “b+a+” , “bba” -> “ba+” “bba” || “b+a+”, “ba” -> “ba+”, “ba” || “b+a”, “a”
+
+
+
+
+No Match: ba, ab, aa
+
+
+bool match(String pattern, String input) 
+
+
+Int patternLen = pattern.length();
+Int inputLen = input.length();
+Int i = 0
+Int j = 0;
+
+
+While (i < patternLen && j < inputLen) {
+
+
+
+
+}
+
+
